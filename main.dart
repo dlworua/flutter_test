@@ -9,15 +9,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(home: MyHomePage());
   }
 }
 
 class MyHomePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+    return MyHomePageState();
   }
 }
 
@@ -27,7 +26,8 @@ class MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Test app')),
-      body: Center(child: Text('$counter')),
+      //font크기 100으로 설정
+      body: Center(child: Text('$counter', style: TextStyle(fontSize: 100))),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.add),
