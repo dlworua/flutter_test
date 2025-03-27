@@ -12,3 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp();
   }
 }
+
+//홈페이지 클래스 생성
+class MyHomePage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+}
